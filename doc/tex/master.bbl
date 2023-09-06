@@ -1,0 +1,72 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Ostendorff%
+, Blume%
+\BCBL {}\ \BBA {} Ostendorff%
+}{%
+Ostendorff%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+openlegaldata}
+\APACinsertmetastar {%
+openlegaldata}%
+\begin{APACrefauthors}%
+Ostendorff, M.%
+, Blume, T.%
+\BCBL {}\ \BBA {} Ostendorff, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Towards an Open Platform for Legal Information} {Towards
+  an open platform for legal information}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of the ACM/IEEE Joint Conference on Digital
+  Libraries in 2020} {Proceedings of the acm/ieee joint conference on digital
+  libraries in 2020}\ (\BPG~385–388).
+\newblock
+\APACaddressPublisher{New York, NY, USA}{Association for Computing Machinery}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1145/3383583.3398616}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1145/3383583.3398616} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sadvilkar%
+\ \BBA {} Neumann%
+}{%
+Sadvilkar%
+\ \BBA {} Neumann%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+sadvilkar-neumann-2020-pysbd}
+\APACinsertmetastar {%
+sadvilkar-neumann-2020-pysbd}%
+\begin{APACrefauthors}%
+Sadvilkar, N.%
+\BCBT {}\ \BBA {} Neumann, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{{\APACmonth{11}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{P}y{SBD}: Pragmatic Sentence Boundary Disambiguation}
+  {{P}y{SBD}: Pragmatic sentence boundary disambiguation}.{\BBCQ}
+\newblock
+\BIn{} \APACrefbtitle {Proceedings of Second Workshop for NLP Open Source
+  Software (NLP-OSS)} {Proceedings of second workshop for nlp open source
+  software (nlp-oss)}\ (\BPGS\ 110--114).
+\newblock
+\APACaddressPublisher{Online}{Association for Computational Linguistics}.
+\newblock
+\begin{APACrefURL} \url{https://www.aclweb.org/anthology/2020.nlposs-1.15}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

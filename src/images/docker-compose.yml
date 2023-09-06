@@ -1,0 +1,47 @@
+version: '3.4'
+services:
+  # Solr-Datenbank
+  database:
+    build: 
+      context: ./solr
+    container_name: solr_database
+    ports: 
+    - 8983:8983
+    volumes:
+    - "./solr/solrdata:/var/solr"
+    command:
+      - solr-precreate
+      - court-decisions
+
+  # Befüllen der Datenbank
+  database-seeder:
+    build: 
+      context: ./solr
+    volumes:
+    - "./solr/import-data:/docker-entrypoint-initdb.d"
+    network_mode: host
+    depends_on:
+      - database
+
+  # Backend (Flask)
+  flask:
+    build: './backend'
+    volumes:
+      - ./backend/:/usr/src/app/
+    environment:
+      - FLASK_DEBUG=1
+    ports:
+      - "5000:5000"
+
+  # Frontend (Node.js)
+  node:
+    build: './frontend'
+    volumes:
+      - ./frontend/:/home/app/
+      - /home/app/node_modules
+    ports:
+      - "80:80"
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    # depends_on:
+    #   - database

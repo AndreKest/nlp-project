@@ -1,0 +1,38 @@
+\chapter{Verschiedene Ressourcen einbauen}
+
+Diese werden in der \textbf{Datei} \texttt{literatur.bib} verwaltet. Die Einträge
+dort können aus Zotero oder Jabref oder direkt aus Metadaten-Angaben/Downloads der Verlagswebseiten kommen.
+
+Folgende Formel...  
+$$
+ \sum_{i=0}^N \frac{i}{i+1}
+$$
+
+
+Eine Matrix:
+
+$$  
+\left[\begin{array}{ll}
+1.0	& 0.0 \\
+0.0	& 1.0 \\
+\end{array}
+\right]
+$$
+
+\cite[Text als URL]{WillKurt.January312019}
+
+Ein Buch mit Seitenzahl \cite[S. 34]{Balzert_etal2008}, ein Journal-Artikel \cite{Sperrvermerke_2015}, ein Proceedings-Beitrag \cite{Frantzi:1998:CMA:646631.696825}, sowie die Zotero-URL 
+\cite{zoteroweb}. Bei den URL-Zitaten sollte immer auch ein \index{Datum} des Zugriffs angegeben werden (Zeile \texttt{lastchecked = ...}): 
+
+\begin{lstlisting}[language=TeX]
+@misc{zoteroweb,
+  author = {Zotero},
+  title = {Your personal research assistant},
+  url = {https://zotero.org},
+  lastchecked = {18.04.2020},
+  year = 2020
+}
+\end{lstlisting}
+
+Das Resultat ist auf der nächsten Seite zu sehen.
+Die Verwendung des \texttt{listings}-Pakets ist in \cite{listingspkg} beschrieben.
